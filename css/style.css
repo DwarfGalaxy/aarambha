@@ -1,0 +1,1037 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* General section */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: linear-gradient(to bottom, rgba(83, 80, 80, 0.7), rgba(22, 22, 22, 0)), url('../images/all-images/homepage-images/homepage-hero-section.png');
+  background-size: 100% 100vh;
+  background-repeat: no-repeat; */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* end of general section */
+
+/* <!-- Header --> */
+
+
+/* end of Header Section */
+
+/* section-one,two,three */
+.directorTitle {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 23px;
+  word-spacing: 3px;
+  font-weight: lighter;
+}
+
+.directorHeading {
+  /* font-family: 'Roboto Slab', serif; */
+  font-weight: bolder;
+}
+
+.titleSecondContainer,
+.aboutAarambha {
+  background-color: #003877;
+}
+
+.titleContainer {
+  margin-top: 10vh;
+}
+
+/* end of section-one,two,three */
+
+
+/* Notice Board Section */
+.noticeBoard {
+  background-color: #FBFBFB;
+}
+
+.noticeBoardText,
+.iconColor,
+.careerText {
+  color: rgb(44, 44, 155);
+}
+
+/* end of Notice Board Section */
+
+/* Career Opportunities Section */
+.careerExplanation {
+  text-align: justify;
+}
+
+.carrerColumn {
+  background-color: #FBFBFB;
+}
+
+/* End of Career Opportunities Section */
+
+/*  Testimonials Sections */
+.testimonialsText {
+  color: rgb(44, 44, 155);
+}
+
+.cardTitleText {
+  font-size: smaller;
+  font-weight: lighter;
+}
+
+.cardDescription {
+  font-size: smaller;
+  font-weight: lighter;
+  text-align: justify;
+}
+
+.cardBorder {
+  border: 1px solid #ddd;
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.1);
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* End of  Testimonials Sections */
+
+/* footerSection */
+.footerSection {
+  background-color: #003877;
+}
+
+.footerLinks {
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.footerAnchorTag {
+  text-decoration: none;
+
+}
+
+/* End of footerSection */
+
+/* Card Container */
+.cardContainer {
+  background-color: #003877;
+  color: white;
+
+}
+
+/* End of card Container */
+
+/* programs provided section*/
+.accordion {
+  /* width: 90%; */
+  /* max-width: 1000px; */
+  margin: 2rem auto;
+}
+
+.accordion-item {
+  background-color: #F0F0F0;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+.accordion-container {
+  color: #003877;
+}
+
+/* end of programs provided section */
+
+/* Media query for desktop devices */
+@media screen and (min-width: 992px) {
+
+  /* section-one,two */
+  .imageGap {
+    padding-right: 0px;
+  }
+
+  /* section-two */
+  .imagePadding {
+    padding: 0px;
+  }
+
+  .imageAarambha {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /*  college title */
+  .college-title {
+    margin-top: 35vh;
+    width: 50%;
+    margin-left: 5rem;
+  }
+
+  .sectionTwoImage {
+    height: 100%;
+  }
+
+  .cardSection {
+    display: none;
+  }
+
+  .collegeName {
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  .noticeBoardText {
+    text-align: start;
+    font-weight: bolder;
+    font-size: 2.5em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .noticeBoard {
+    padding-top: 3rem;
+    text-align: justify;
+    padding-bottom: 3rem;
+  }
+
+  .careerOppSmallDevice {
+    display: none;
+  }
+
+  .testimonialsHeading {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    color: #003877;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+
+
+
+
+  .footerAnchorTag {
+    color: white;
+
+  }
+
+  .contactContainer {
+    margin-top: 1rem;
+  }
+
+  .footerAnchorTag {
+    font-size: 1.1em;
+  }
+
+  .footerSection {
+    position: absolute;
+  }
+
+  .logoAarambha {
+    position: absolute;
+    width: 19rem;
+    height: 5rem;
+    left: 6rem;
+    top: 3rem;
+  }
+
+  .mainLogo {
+    position: relative;
+    left: 3rem;
+  }
+
+  .directorHeading {
+    font-size: 2rem;
+  }
+
+  .directorTitle {
+    font-size: 1.2rem;
+  }
+
+  .headerTitle {
+    margin-bottom: 1.5rem;
+  }
+
+
+
+}
+
+/* Media query for tablet devices */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-size: 100% 60vh;
+  }
+
+  /* section-one,two */
+  .imageGap {
+    padding-right: 0px;
+  }
+
+  .mainSection {
+    display: none;
+  }
+
+  /* section-two */
+  .imagePadding {
+    padding: 0px;
+  }
+
+  .imageAarambha {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* nav */
+  .navbar-expand-lg .navbar-nav {
+    background-color: white;
+    text-align: center;
+    background-color: #003877;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    width: 95%;
+    top: 100px;
+  }
+
+  .nav-link {
+    color: white !important;
+    ;
+  }
+
+  .college-title {
+    text-align: center;
+    margin-top: 8vh;
+  }
+
+  .collegeName {
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  .headerTitle {
+    text-align: center;
+  }
+
+  .cardContainer {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .directorsWords {
+    margin-bottom: 1rem;
+  }
+
+  .noticeBoardText {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .noticeBoard {
+    padding-top: 2rem;
+    text-align: justify;
+    padding-bottom: 2rem;
+  }
+
+  .careerOppSmallDevice {
+    display: none;
+  }
+
+  .testimonialsHeading {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    color: #003877;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .carausolSecondCard {
+    display: none;
+  }
+
+  .logoAarambha {
+    position: relative;
+    width: 19rem;
+    height: 5rem;
+    left: 33%;
+    top: 0.5rem;
+  }
+
+  .footerAnchorTag {
+    color: white;
+
+  }
+
+  .programs {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .careerText {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+}
+
+
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+  body {
+    background-size: 100% 56vh;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    background-color: white;
+    text-align: center;
+    background-color: #003877;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    width: 95%;
+    padding: 0;
+    top: 100px;
+  }
+
+  .nav-link {
+    color: white !important;
+    ;
+  }
+
+  /*  college title */
+  .college-title {
+    margin-top: 10vh;
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  /* section-one,two,three */
+  .readMore {
+    margin-bottom: 20px;
+  }
+
+  .headerTitle {
+    text-align: center;
+  }
+
+  .mainSection {
+    display: none;
+  }
+
+  .collegeName {
+    font-weight: bolder;
+    font-size: 2em;
+  }
+
+  .cardContainer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .noticeBoardText {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .noticeBoard {
+    padding-top: 2rem;
+    text-align: justify;
+    padding-bottom: 2rem;
+  }
+
+  .opportunitiesSection {
+    display: none;
+  }
+
+  .careerOpp {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #003877;
+  }
+
+  .careerOppText {
+    text-align: justify;
+  }
+
+  .carausolSecondCard {
+    display: none;
+  }
+
+  .cardStyle {
+    height: 10rem;
+  }
+
+  .footerAnchorTag {
+    color: white;
+    font-size: 1.2em;
+  }
+
+  .footerAnchorTagContainer {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .programs {
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .logoAarambha {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+  }
+}
+
+/* header */
+.nav_left {
+  background-color: #003877;
+  border-top-left-radius: 48px;
+  border-bottom-left-radius: 48px;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: transparent;
+  border-color: transparent;
+  border-top: 4px solid #fff;
+  color: #fff;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0 30px 0 40px;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.nav-link {
+  padding: 1rem 0.5rem;
+  color: #fff;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #fff;
+}
+
+.search_input {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  line-height: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: #003877;
+}
+
+.search_input:focus-visible {
+  outline: none;
+}
+
+input.search_input::placeholder {
+  color: #cfd2ec;
+  vertical-align: middle;
+}
+
+.search_img {
+  top: 7px;
+  right: 8px;
+}
+
+.navbar-toggler {
+  border: 0px;
+
+}
+
+
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* navbar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+  background: rgb(0, 123, 255, 0.3);
+}
+
+.content {
+  max-width: 1250px;
+  margin-left: auto;
+  padding: 0 40px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+  box-shadow: 0px 17px 13px -14px rgba(113, 110, 122, 1);
+  padding: 20px 0;
+  /* box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1); */
+  background: #003877;
+}
+
+.navbar .content {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+
+
+.navbar .menu-list {
+  display: inline-flex;
+}
+
+.menu-list li {
+  list-style: none;
+}
+
+.menu-list li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu-list li a:hover {
+  color: #ffecec;
+}
+
+.banner {
+  background: linear-gradient(to bottom, rgba(83, 80, 80, 0.7), rgba(22, 22, 22, 0)), url("../images/all-images/homepage-images/homepage-hero-section.png") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: absolute;
+}
+
+.about {
+  padding: 30px 0;
+}
+
+.about .title {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.about p {
+  padding-top: 20px;
+  text-align: justify;
+}
+
+.icon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-list .cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+@media (max-width:1230px) {
+  .content {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width:1100px) {
+  .content {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width:900px) {
+  .content {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width:868px) {
+  .icon {
+    display: block;
+  }
+
+  body.disabled {
+    overflow: hidden;
+  }
+
+  .icon.hide {
+    display: none;
+  }
+
+  .navbar .menu-list {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #003877;
+    transition: all 0.3s ease;
+  }
+
+  .navbar.show .menu-list {
+    left: 0%;
+  }
+
+  .navbar .menu-list li {
+    margin-top: 45px;
+  }
+
+  .navbar .menu-list li a {
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .navbar.show .menu-list li a {
+    margin-left: 0;
+  }
+
+  .banner {
+    height: 50vh;
+  }
+}
+
+@media (max-width:380px) {
+  .content .logo a {
+    font-size: 27px;
+  }
+
+
+}
+
+/* college title */
+.learnMoreBtn,
+.register-btn {
+  background-color: #003877;
+}
+
+.accordion-desc {
+  text-align: justify;
+}
+
+
+.learnMoreBtn:hover {
+  background-color: rgb(51, 51, 143);
+}
+
+
+.register-btn:hover {
+  background-color: rgb(51, 51, 143);
+}
+
+.headerTitle {
+  text-align: justify;
+}
+
+.notice-section {
+  text-decoration: none;
+}
+
+/* smooth line */
+.menu-list li {
+  position: relative;
+}
+
+.menu-list li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.menu-list li:hover::after {
+  width: 100%;
+}
+
+/* end of college title section */
+
+/* Media query for desktop devices */
+@media screen and (min-width: 992px) {
+
+  /*  college title */
+  .college-title {
+    position: absolute;
+    margin-top: 40vh;
+    width: 40vw;
+    margin-left: 7rem;
+  }
+
+  .main-logo {
+    position: absolute;
+    left: 3rem;
+    width: 14rem;
+    height: 3.2rem;
+    top: 10px;
+  }
+
+  .college-Name {
+    font-size: 3em;
+    font-weight: bold;
+  }
+
+  .menu-list li::after {
+    left: 13px;
+    bottom: -5px;
+  }
+
+  .navbar.sticky {
+    padding: 2.5vh 0;
+  }
+}
+
+.menu-btn {
+  position: fixed;
+  right: 10px;
+  top: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+/* tablet devices */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .banner {
+    height: 44vh;
+  }
+
+  /*  college title */
+  .college-title {
+    position: absolute;
+    margin-top: 20vh;
+    width: 100%;
+  }
+
+  .main-logo {
+    position: absolute;
+    left: 2rem;
+    width: 25rem;
+    height: 6rem;
+    top: 15px;
+  }
+
+  .college-Name {
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .learnMoreBtn {
+    display: block;
+    margin: 0 auto;
+  }
+
+
+  .headerTitle {
+    text-align: center;
+  }
+
+  .navbar.sticky {
+    padding: 65px 0;
+  }
+
+  .menu-btn {
+    right: 20px;
+    font-size: 50px;
+  }
+
+  .cancel-btn {
+    font-size: 40px;
+  }
+
+
+}
+
+
+
+/* mobile devices */
+@media screen and (max-width: 767px) {
+
+  /*  college title */
+  .college-title {
+    position: absolute;
+    margin-top: 15vh;
+    width: 100%;
+  }
+
+  .main-logo {
+    position: absolute;
+    left: 1rem;
+    width: 19rem;
+    height: 4.3rem;
+    top: 12px;
+  }
+
+  .college-Name {
+    font-size: 2.3em;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .learnMoreBtn {
+    display: block;
+    margin: 0 auto;
+  }
+
+
+  .headerTitle {
+    text-align: center;
+  }
+
+  .navbar.sticky {
+    padding: 44px 0;
+  }
+
+  .banner {
+    height: 40vh;
+  }
+}
+
+/* testimonials */
+.item .container {
+  padding: 0;
+  margin: 14px;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.57);
+  border-radius: 3px;
+  border: 0px;
+  overflow: hidden;
+}
+
+.item .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardText {
+  text-align: justify;
+}
+
+
+.indicators {
+  display: flex;
+  gap: 5px;
+  margin: 20px auto;
+  width: max-content;
+
+}
+
+.indicators .dot {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+}
+
+.tns-nav button {
+  border: 2px solid red;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.tns-nav .tns-nav-active {
+  background-color: red;
+}
+
+.tns-nav {
+  text-align: center;
+}
